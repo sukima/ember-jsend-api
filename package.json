@@ -1,7 +1,7 @@
 {
   "name": "ember-jsend-api",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "Ember addon for jsend APIs without ember-data",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/sukima/ember-jsend-api.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Devin Weaver (@sukima) <suki@tritarget.org>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -31,10 +31,11 @@
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^1.2.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "1.13.15",
+    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-disable-prototype-extensions": "^1.0.0",
+    "ember-sinon": "0.3.0",
+    "ember-sinon-qunit": "1.1.0",
     "ember-try": "~0.0.8"
   },
   "keywords": [
