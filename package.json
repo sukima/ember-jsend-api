@@ -1,6 +1,6 @@
 {
   "name": "ember-jsend-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ember addon for jsend APIs without ember-data",
   "directories": {
     "doc": "doc",
