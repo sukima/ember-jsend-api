@@ -44,7 +44,7 @@ function mapToModelObject(Model) {
 }
 
 function urlFor(parts) {
-  return Ember.A(parts).compact().join('/');
+  return Ember.A(parts).filter(part => Ember.isPresent(part)).join('/');
 }
 
 export default Ember.Service.extend({
@@ -62,7 +62,7 @@ export default Ember.Service.extend({
 
   ajax({url, method, data}, dataNode) {
     method = method || 'GET';
-    return Ember.RSVP.resolve(Ember.$.ajax({url, method, data}))
+    return Ember.RSVP.resolve(Ember.$.ajax({url, method, data}), 'jsend')
       .catch(parseErrorResponse)
       .then(getDataFromResponse(dataNode));
   },
